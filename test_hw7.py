@@ -1,4 +1,4 @@
-from HW7 import Robot, CompoundRobot
+from battle_unit import Robot, CompoundRobot
 
 # build some Robot objects
 r1 = Robot(name="Robot 1")
@@ -60,7 +60,7 @@ assert r3.compound == cr1, \
 cr2 = r4 + cr1
 
 # test the new CompoundRobot object
-assert cr2.energy == 80,HW7.py
+assert cr2.energy == 80
 assert r4 in cr2.components, \
     "cr2's components attribute does not include r4"
 assert cr1 in cr2.components, \
